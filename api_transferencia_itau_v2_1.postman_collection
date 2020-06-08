@@ -1,0 +1,154 @@
+{
+	"info": {
+		"_postman_id": "219d7098-650a-4431-b29e-8c35377fb347",
+		"name": "Itaú",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "01 - Cadastrar Cliente",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "keyPublica",
+						"type": "text",
+						"value": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnpdEA6nhZ9Og+v4YFjNDv53tSPLVqIaWD9oqsQl5K0t0DfWew0jwr2tIOGUIX7QV/B71vJYGzfAHi5i/rZ5PTG/b4an9e9JAVvd8AOfokOk6Gq0udqtNmR539LNIGtZGg+lunC7JBNbQf19zrqzFx5VnLvV7nYsPRae7J0AMnTOG4cwu/yEGtS8lP8LM1Tg9jo/R5ci6Gi24K/OUZ9AXUFEkMHzKYxpAsV6bb6grbYH9ZiSWkL2+F/TZK+doLVHAdVKywO1Czi1zjrjd1UeE1ApMW+1t7+az8nhaEoTRpg+2x23uMvIp55ghcCFzgDiqiJbr6+SmWAD/Gcahaj6SJQIDAQAB"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n{\r\n  \"nome\": \"Andre Barbosa da Silva\",\r\n  \"saldo\": 10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{HOST}}/clientes",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"clientes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "02 Listar Todos os Clientes",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "i",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{HOST}}/usuarios/1",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"usuarios",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "03 Localizar Cliente por Conta",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "i",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{HOST}}/usuarios/1",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"usuarios",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "04 Realizar Transferencia",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{HOST}}/transfere?numeroContaOrigem=1&numeroContaDestino=2&valor=1000",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"transfere"
+					],
+					"query": [
+						{
+							"key": "numeroContaOrigem",
+							"value": "1"
+						},
+						{
+							"key": "numeroContaDestino",
+							"value": "2"
+						},
+						{
+							"key": "valor",
+							"value": "1000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "05 Listar Transferência por Conta",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "i",
+						"type": "text",
+						"value": ""
+					}
+				],
+				"url": {
+					"raw": "{{HOST}}/extrato/2",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"extrato",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
