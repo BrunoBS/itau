@@ -11,6 +11,8 @@ import org.mockito.BDDMockito;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.springframework.beans.factory.annotation.Autowired;
+
+import br.com.itau.dto.TransferenciaDTO;
 import br.com.itau.modelo.Cliente;
 import br.com.itau.modelo.OperacaoType;
 import br.com.itau.modelo.Transferencia;
@@ -18,7 +20,6 @@ import br.com.itau.repositorio.ClienteRepository;
 import br.com.itau.servico.ClienteService;
 import br.com.itau.servico.TransferenciaService;
 import br.com.itau.util.AppMensage;
-import br.com.itau.util.dto.TransferenciaDTO;
 
 public abstract class MockTests extends AppTestes {
 

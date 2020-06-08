@@ -1,4 +1,4 @@
-package br.com.itau.util.dto;
+package br.com.itau.dto;
 
 import java.math.BigDecimal;
 

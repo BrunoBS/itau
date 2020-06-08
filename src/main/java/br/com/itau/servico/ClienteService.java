@@ -9,11 +9,11 @@ import org.springframework.transaction.annotation.Transactional;
 
 import br.com.itau.config.ClienteException;
 import br.com.itau.config.ClienteNotFoundException;
+import br.com.itau.dto.TransferenciaDTO;
 import br.com.itau.modelo.Cliente;
 import br.com.itau.modelo.Transferencia;
 import br.com.itau.repositorio.ClienteRepository;
 import br.com.itau.util.AppMensage;
-import br.com.itau.util.dto.TransferenciaDTO;
 
 @Service
 public class ClienteService {
