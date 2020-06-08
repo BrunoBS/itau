@@ -72,6 +72,6 @@ devem armazenadas.
 10. readme.md com a documentação de como utilizar a aplicação.
 
 
-Qualquer dúvida fico a disposição.[Clique aqui] (https://www.linkedin.com/in/bruno-barbosa-6a550a29/)
+Qualquer dúvida fico a disposição.[Clique aqui](https://www.linkedin.com/in/bruno-barbosa-6a550a29/)
 
 
