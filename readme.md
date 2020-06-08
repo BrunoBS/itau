@@ -40,7 +40,7 @@ docker run -t -p 9090:9090 --name api-transferencia-itau brunobsgt/api-transfere
 ```
 **Observações**
 
-1. Após executar a  aplicação acessar o link: http://{host}9090/swagger-ui.html  para conhecer a documentação da API.
+1. Após executar a  aplicação acessar o [link](http://localhost:9090/swagger-ui.html#/)  para conhecer a documentação da API.
 2. Na raiz do projeto tem um  [arquivo](/api_transferencia_itau_v2_1.postman_collection) para realizar testes no POSTMAN.
 
 
